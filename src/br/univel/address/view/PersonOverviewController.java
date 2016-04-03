@@ -6,6 +6,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import br.univel.address.MainApp;
 import br.univel.address.model.Person;
+import br.univel.address.util.DateUtil;
 
 public class PersonOverviewController {
     @FXML
@@ -55,8 +56,14 @@ public class PersonOverviewController {
      * 
      * @param person a pessoa ou null
      */
-    private void showPersonDetails(Person person) {
-        if (person != null) {
+
+    
+ 	private void showPersonDetails(Person person) {
+
+ 		  birthdayLabel.setText(DateUtil.format(person.getBirthday()));
+ 	}
+ 	
+/**        if (person != null) {
             // Preenche as labels com informações do objeto person.
             firstNameLabel.setText(person.getFirstName());
             lastNameLabel.setText(person.getLastName());
@@ -66,6 +73,7 @@ public class PersonOverviewController {
 
             // TODO: Nós precisamos de uma maneira de converter o aniversário em um String! 
             // birthdayLabel.setText(...);
+
         } else {
             // Person é null, remove todo o texto.
             firstNameLabel.setText("");
@@ -76,6 +84,7 @@ public class PersonOverviewController {
             birthdayLabel.setText("");
         }
     }
+*/
     
     /**
      * É chamado pela aplicação principal para dar uma referência de volta a si mesmo.
