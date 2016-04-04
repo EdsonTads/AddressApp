@@ -20,4 +20,11 @@
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>resources/images/Address_Book.png</name>
+			<type>1</type>
+			<location>C:/Users/Edson/Desktop/Address_Book.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
