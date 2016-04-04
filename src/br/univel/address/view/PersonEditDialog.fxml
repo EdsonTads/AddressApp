@@ -41,8 +41,8 @@
       </GridPane>
       <HBox layoutX="191.0" layoutY="161.0" spacing="20.0">
          <children>
-            <Button lineSpacing="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Ok" />
-            <Button lineSpacing="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Cancel" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="79.0" text="Ok" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="79.0" text="Cancel" />
          </children>
       </HBox>
    </children>
